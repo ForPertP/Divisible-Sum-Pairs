@@ -28,7 +28,7 @@ int divisibleSumPairs2(int n, int k, vector<int> ar)
     int count = 0;
     int mod = 0;
     
-    for_each (ar.begin(), ar.end(),
+    for_each (ar.cbegin(), ar.cend(),
         [&, k, ar](auto i)
         {
             mod = i % k;
