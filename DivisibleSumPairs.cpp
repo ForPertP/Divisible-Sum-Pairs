@@ -16,6 +16,12 @@ int divisibleSumPairs(int n, int k, vector<int> ar)
     return count;
 }
 
+
+// (a + b) % k = (a % k + b % k) % k
+// a = 1, b = 2, k = 3
+// (1 + 2) % 3 = (1 % 3 + 2 % 3 ) % 3
+// 3 % 3 = (1 + 2 ) % 3
+
 int divisibleSumPairs2(int n, int k, vector<int> ar)
 {
     vector<int> bucket(k);
