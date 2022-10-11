@@ -1,3 +1,11 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+vector<string> split(const string &);
+
 int divisibleSumPairs(int n, int k, vector<int> ar)
 {
     int count = 0;
