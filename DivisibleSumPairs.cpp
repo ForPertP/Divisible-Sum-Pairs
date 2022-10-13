@@ -47,7 +47,7 @@ int divisibleSumPairs2(int n, int k, vector<int> ar)
     int mod = 0;
     
     for_each (ar.cbegin(), ar.cend(),
-        [&, k, ar](auto i)
+        [&](auto i)
         {
             mod = i % k;
             count += bucket[(k-mod)%k];
